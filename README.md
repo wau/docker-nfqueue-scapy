@@ -103,10 +103,3 @@ sudo docker run -it --rm \
 
 Note that you will need to run your `iptables` rules to send packets to the queue
 from within the `$CONTAINER_ID` container.
-
-## Other notes
-
-scapy is hardcoded version `2.3.2` because there is a bug in `2.3.3` causing
-scapy to fail on openstack deployments. The bug is actually upstream in openstack,
-and has been fixed, but this caused problems for me testing on packet.net where
-they have apparently not updated openstack yet.
