@@ -33,7 +33,7 @@ RUN apt-get update && \
     libnetfilter-queue-dev \
     python-pip
 
-RUN pip install scapy==2.3.2
+RUN pip install scapy
 RUN pip install NetfilterQueue
 
 # Force matplotlib to generate the font cache
